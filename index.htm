@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/3513d5fe97.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OCI MATCH</title>
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.htm">Match Your OCI</a>
+</nav>
+<body>
+        <div class="container">
+<form id ="form">
+
+  <div class="alert alert-primary note" role="alert">
+    Designed for a day to day Airport Operation. Best Viewed on a cellphone or tablet
+  </div>
+    <div class="row">
+        <div class="col-md-3 col-sm-12">
+            <div class="form-group">
+                <label>Year Of Birth</label>
+                <input id="birth" type="number" placeholder="XXXX" class="form-control" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==4) return false" name="birthdate" onkeyup="birthvalidate()">
+            </div>
+        </div>
+            <div class="col-md-3 col-sm-12" id="ocidiv" style="display: none;">
+            <div class="form-group">
+                <label>Year of OCI Issue </label>
+                <input id="oci" type="number"  class="form-control" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==4) return false" name="ocidate" onkeyup="ocivalidate()">
+            </div>
+            </div>
+
+
+            <div class="col-md-3 col-sm-12" id="pptdiv" style="display: none;">
+            <div class="form-group">
+                <label>Year Of passport Issue</label>
+                <input id="ppt" type="number"  class="form-control" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==4) return false" name="pptdate" onkeyup="pptvalidate()">
+            </div>
+          </div>
+            <div class="col-md-3 col-sm-12 align-self-end">
+            <div class="form-group ">
+                <a id="submit" class="btn submitbtn btn-block btn-lg" href="#.htm" role="button">SUBMIT</a>
+
+            </div>
+          </div>
+       
+    </div>
+      
+
+</form>
+
+<a id="status" role="button" href="index.htm" class="btn btn-lg btn-block">  </a>
+ 
+
+ 
+        </div>
+    <div class="footer-padding"></div>
+  <div class="footer">
+    <p>&#169;AVTech ✈️ &#169; አንቲቲ  🇪🇹</p>
+    <p class="footer-details">Automating Daily Routines</p>
+  </div>
+
+  <script src="ocijs.js"></script>
+</body>
+</html>
